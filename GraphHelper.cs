@@ -56,7 +56,7 @@ class GraphHelper
             .Sites
             .GetAsync(requestConfiguration => {
                 requestConfiguration.QueryParameters.Select = new string[] { "Id","WebUrl" };
-                requestConfiguration.QueryParameters.Top = 5; });
+            });
     }
 
     //public static Task GetSiteActivitiesAsync(string siteId, string today, string earlier)
